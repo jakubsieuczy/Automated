@@ -23,9 +23,7 @@ public class LoginSteps {
     @Given("I open browser")
     public void iOpenBrowser() {
         System.setProperty("webdriver.chrome.driver", "your path to webdriver");
-        ChromeOptions options = new ChromeOptions();
-        options.setBinary("/Applications/Brave Browser.app/Contents/MacOS/Brave Browser");
-        webdriver = new ChromeDriver(options);
+        webdriver = new ChromeDriver();
     }
 
     @And("I go to login page")
